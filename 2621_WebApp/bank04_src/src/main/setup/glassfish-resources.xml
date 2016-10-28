@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+
+<resources>
+
+	<jdbc-resource jndi-name="jdbc/BankDS" pool-name="BankPool" enabled="true"/>
+	<jdbc-connection-pool name="BankPool" res-type="javax.sql.DataSource" datasource-classname="org.apache.derby.jdbc.ClientXADataSource">
+		<property name="ServerName" value="localhost"/>
+		<property name="PortNumber" value="1527"/>
+		<property name="DatabaseName" value="bankdb"/>
+		<property name="User" value="app"/>
+		<property name="Password" value="app"/>
+		<property name="ConnectionAttributes" value="create=true"/>
+	</jdbc-connection-pool>
+
+</resources>

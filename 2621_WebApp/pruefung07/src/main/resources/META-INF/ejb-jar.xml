@@ -1,0 +1,24 @@
+<ejb-jar xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/ejb-jar_3_2.xsd"
+	version="3.2">
+
+	<enterprise-beans>
+		<session>
+			<ejb-name>WeatherForecastBean</ejb-name>
+			<env-entry>
+				<env-entry-name>temperatureUnit</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>Kelvin</env-entry-value>
+			</env-entry>
+		</session>
+		<session>
+			<display-name>weatherforecast</display-name>
+			<ejb-name>WeatherForecastService</ejb-name>
+			<service-endpoint>ch.hftm.weatherstation.service.WeatherForecastService</service-endpoint> 
+			<ejb-class>ch.hftm.weatherstation.service.WeatherForecastService</ejb-class>
+			<session-type>Stateless</session-type>
+		</session>
+	</enterprise-beans>
+
+
+</ejb-jar>
