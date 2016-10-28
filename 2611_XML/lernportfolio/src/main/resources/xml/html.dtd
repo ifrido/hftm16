@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT html (container*|include*|(container,include)*|(include,container)*)>
+<!ELEMENT container (container*|include*|(container,include)*|(include,container)*)>
+<!ATTLIST container
+  name CDATA #REQUIRED>
+
+<!ELEMENT include (#PCDATA)>
+<!ATTLIST include
+  name CDATA #REQUIRED>

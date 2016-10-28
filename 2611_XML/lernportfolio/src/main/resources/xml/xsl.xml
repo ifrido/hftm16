@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl.xsl"?>
+<html>
+    <container name="html">
+        <container name="header">
+            <container name="script">
+            </container>
+        </container>
+        <container name="body">
+        </container>
+    </container>
+</html>

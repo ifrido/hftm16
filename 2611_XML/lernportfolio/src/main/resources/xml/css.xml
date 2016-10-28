@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/style.css"?>
+<html>
+    <container name="html">
+        html_container
+        <container name="header">
+            header_container
+            <include name="header.xml">header_include</include>
+        </container>
+        <container name="body">
+            body_container
+            <include name="content.xml">content_include</include>
+            <include name="footer.xml">footer_include</include>
+        </container>
+    </container>
+</html>

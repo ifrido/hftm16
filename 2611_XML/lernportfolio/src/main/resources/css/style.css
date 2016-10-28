@@ -1,0 +1,21 @@
+html{
+    background-color:darkgrey;
+}
+container{
+    border-style:solid;
+    color:red;
+    width:80%;
+    height:100%;
+    margin:auto;
+    margin-bottom:12px;
+    padding:12px;
+    display:block;
+}
+
+include {
+    border-style:solid;
+    color:blue;
+    padding:12px;
+    margin:6px;
+    display:block;
+}
